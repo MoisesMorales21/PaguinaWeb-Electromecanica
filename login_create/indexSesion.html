@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Bienvenido a mi Formulario</title>
+</head>
+<!--Iniciar Sesion Minimizado-->
+<body>
+    <div class="container-form sign-up">
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bienvenido a Electromecánica Industrial</h2>
+                <p>Si ya tienes una cuenta por favor inicia sesion aqui</p>
+                <button class="sign-up-btn">Iniciar Sesion</button>
+            </div>
+        <!--Crear Cuenta Maximizado-->
+            </div>
+        <form class="formulario" method="post" action="create.php">
+            <h2 class="create-account">Crear una cuenta</h2>
+            <!--Logos(instagram,linkedin,facebook)-->
+            <div class="iconos">
+                <div class="border-icon">
+                    <i class='bx bxl-instagram'></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-linkedin' ></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-facebook-circle' ></i>
+                </div>
+                <!--Empieza el form para ingresar datos (crear cuenta)-->
+            </div>
+            <p class="cuenta-gratis">Crear una cuenta gratis</p>
+            <!--inputs(nombre,apellido,celular,direccion,dni,
+            correo, password)-->
+            <input type="text" name="nombre" required="true" maxlength="30" placeholder="Nombre">
+            <input type="text" name="apellido" required="true" maxlength="30" placeholder="Apellido">
+            <input type="text" name="celular" required="true" placeholder="Celular">
+            <input type="text" name="direccion" required="true" maxlength="100" placeholder="Direccion">
+            <!--
+            <select name="documento">
+            <option value="0">Elija documento</option>
+            <option value="1">dni</option>
+            </select>-->
+            <input type="text" name="dni" placeholder="Ingrese su DNI (Opcional)">
+            <input type="email" name="correo" required="true" maxlength="50" placeholder="Email">
+            <input type="password" name="password" required="true" maxlength="30" placeholder="Contraseña">
+            <!--
+            <input type="text" placeholder="Nombre">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Contraseña">
+            -->
+            <input class="btn" type="submit" value="Registrarse">
+            
+        </form>
+        <!--Logear Cuenta Maximizado-->
+    </div>
+    <div class="container-form sign-in">
+        <form class="formulario" method="post" action="login.php">
+            <h2 class="login-account">Iniciar Sesion</h2>
+            <!--Logos(instagram,linkedin,facebook)-->
+            <div class="iconos">
+                <div class="border-icon">
+                    <i class='bx bxl-instagram'></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-linkedin' ></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-facebook-circle' ></i>
+                </div>
+            </div>
+            <p class="cuenta-gratis">¿Aun no tienes una cuenta?</p>
+            <input name="co" type="email" required="true" placeholder="Email">
+            <input name="ps" type="password" required="true" placeholder="Contraseña">
+            <input class="btn" type="submit" value="Iniciar Sesion">
+        </form>
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bienvenido de nuevo</h2>
+                <p>Si aun no tienes una cuenta por favor registrese aqui</p>
+                <button class="sign-in-btn">Registrarse</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

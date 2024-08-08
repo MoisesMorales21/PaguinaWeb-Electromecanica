@@ -1,0 +1,453 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+                     /*ESTILOS PARA SECCION INICIO*/
+/*-----------------------------------------------------*/
+           /* Estilo para el fondo de pantalla */
+#inicio {
+    background-image: url(Imagenes/Fondo1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    
+}
+
+#contenido {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+#Blog {
+    display: flex;
+    flex-wrap: wrap; /* Hace que las imágenes se envuelvan a la siguiente línea */
+    justify-content: space-between;
+    padding: 20px;
+}
+/* Estilos para el encabezado (navegación) */
+header {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    text-align: center; /* Centra el contenido del encabezado horizontalmente */
+}
+.nav {
+    background: radial-gradient(at top, red, #1de96b);
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+/* Estilos del menu despegable*/
+
+.nav > li {
+    float:left;
+}
+
+.nav li a {
+    background-color:#0e0e0f;
+    color:#f5f1f1;
+    text-decoration:none;
+    font-weight: bold;
+    padding:10px 80px;
+    display:block;
+    font-size: 17px; /* Aumentar el tamaño de fuente de las pestañas */
+}
+
+.nav li a:hover {
+    background-color:#a7632c;
+}
+
+.nav li ul {
+    list-style: none;
+    display:none;
+    position:absolute;
+    min-width:140px;
+    justify-content: center;
+
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position:relative;
+}
+
+.nav li ul li ul {
+    right:-140px;
+    top:0px;
+}
+
+
+/* Estilos para el contenido de inicio */
+.contenido-inicio {
+    margin-bottom: 40px;
+}
+
+
+                    /* ESTILOS PARA SECCION DE NOSOTROS*/
+/*--------------------------------------------------------------------------------------*/
+#nosotros{
+    background-image: url(Imagenes/fondo7.jpg);
+    padding: 20px;
+    text-align: center;
+    color: #f3f6f8;
+}
+#nosotros h1 {
+    background-image: url(Imagenes/fondo5.jpg);
+    padding: 20px;
+    text-align: center;
+}
+.quienes-somos {
+    list-style: none;
+    padding: 0;
+}
+
+.quienes-somos li {
+    display: flex; /* Use flexbox to create a horizontal layout within each list item */
+    align-items: center; /* Center the content vertically within each list item */
+    font-size: 18px;
+    color: #0c0c0c;
+    margin-bottom: 10px;
+}
+
+.empresa {
+    width: 50%;
+    height: auto;
+    padding: 10px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in the 50% width */
+}
+
+.texto-somos {
+    flex: 1; /* The text occupies the other half of the available horizontal space */
+    padding: 20px;
+    text-align: left;
+    border-radius: 5px;
+    background-image: url(Imagenes/fondo3.jpg);
+}
+.empresa img {
+    width: 450px;
+    height: 410px;
+    border: 2px solid rgb(242, 243, 238);
+    border-radius: 5px;
+}
+.quienes-somos {
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    justify-content: center;
+    align-items: center;
+}
+
+
+                       /* ESTiLOS PARA SECCION DE SERVICIOS*/
+/*---------------------------------------------------------------------------------*/
+/* Estilos para la sección de Servicios */
+#servicios {
+    background-color: rgb(231, 235, 240);
+    padding: 20px;
+    text-align: center;
+}
+
+#servicios h2 {
+    font-size: 24px;
+    color: #f71111;
+    margin-bottom: 20px;
+}
+
+.lista-servicios {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-servicios li {
+    font-size: 18px;
+    color: #0c0c0c;
+    margin-bottom: 10px;
+}
+
+
+
+.electricidad-industrial,
+.sistema-incendios,
+.agua-potable,
+.sistema-piscinas,
+.aire-acondicionado,
+.estructura-metalica,
+.energia-menores,
+.sistema-drywall,
+.pintado,
+.carpenteria,
+.albañeria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Imagenes/fondo4.jpg);
+  }
+  
+.electricista,
+.incendios,
+.potable,
+.piscina,
+.aire_acondicionado,
+.estructuras_metalicas,
+.camara,
+.drywall,
+.pintor,
+.carpintero,
+.mayolica{
+    width: 50%;
+    height: auto;
+  }
+  
+  .texto1,
+  .texto2,
+  .texto3,
+  .texto4,
+  .texto5,
+  .texto6,
+  .texto7,
+  .texto8,
+  .texto9,
+  .texto10,
+  .texto11{
+    flex: 1; /* El texto ocupará la mitad del ancho disponible */
+    padding: 20px; /* Añade espacio alrededor del texto para mayor legibilidad */
+    text-align: left;
+    border-radius: 5px;
+    background-color: #ffdd90;
+    /*background-image: url(Imagenes/fondo3.jpg);*/
+  }
+
+
+.electricista img,
+.incendios img,
+.potable img,
+.piscina img,
+.aire_acondicionado img,
+.estructuras_metalicas img,
+.camara img,
+.drywall img,
+.pintor img,
+.carpintero img,
+.mayolica img{
+    width: 400px; /* Ajusta el valor al tamaño deseado */
+    height: 350px; /* Ajusta el valor al tamaño deseado */
+    border: 2px solid rgb(242, 243, 238);
+    border-radius: 5px;
+}
+
+
+/*Estilos de buttom  cotizar*/
+button {
+width: 9em;
+height: 3em;
+border-radius: 30em;
+font-size: 15px;
+font-family: inherit;
+border: none;
+position: relative;
+overflow: hidden;
+z-index: 1;
+box-shadow: 6px 6px 12px #c5c5c5,
+-6px -6px 12px #ffffff;
+}
+button::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #0fc1d8 0%, #f9f047) ;
+    transition: .5s case;
+    display: block;
+    z-index: -1;
+}
+button:hover::before {
+width: 9em;
+}
+
+                      /*Estilos para los contactos*/
+/*-------------------------------------------------------------------------*/
+/* Estilos para los enlaces (a) */
+li a {
+    display: flex; /* Utiliza flexbox para alinear elementos en fila */
+    align-items: center; /* Centra verticalmente el texto e ícono */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: #333; /* Color del texto */
+    font-size: 16px; /* Tamaño de fuente */
+  }
+  
+  /* Estilos para los íconos */
+  li a img {
+    width: 30px; /* Ancho del ícono */
+    height: 30px; /* Altura del ícono */
+    margin-right: 10px; /* Espacio a la derecha del ícono */
+  }
+  
+  /* Estilos al pasar el ratón sobre los enlaces (opcional) */
+  li a:hover {
+    color: #007bff; /* Cambia el color del texto al pasar el ratón */
+  }
+
+
+                             /*ESTILOS PARA LA SECCION DE BLOG*/
+  /*----------------------------------------------------------------------------*/
+  #blog{
+    background-image: url(Imagenes/fondo6.jpg);
+  }
+  #blog h1{
+    padding: 20px;
+     font-size: 24px; 
+     color: #0d09ee;
+     text-align: center;
+}
+  article {
+    background-image: url(Imagenes/fondo6.jpg);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: flex; /* Use flexbox to control layout */
+    align-items: center; /* Center items vertically within each article */
+}
+
+.article-image {
+    flex: 1; /* Allow the image to take up half of the available space */
+    padding: 10px; /* Add padding to separate the image from the text */
+}
+
+.article-content {
+    flex: 2; /* Allow the content to take up the other half of the available space */
+}
+
+.article-image img {
+    max-width: 100%; /* Make sure the image doesn't exceed its container's width */
+    display: block; /* Remove extra space below the image */
+}
+
+article h3 {
+    color: #14ee6f;
+}
+
+article a {
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #f7f8fa;
+    font-weight: bold;
+}
+
+article a:hover {
+    color: #0050a6;
+}
+
+/* Establece un contenedor para las imágenes */
+.main1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas por fila */
+    gap: 20px; /* Espacio entre las imágenes */
+}
+
+  /* Estilos para las imágenes de blog*/
+.imagen1,
+.imagen2,
+.imagen3,
+.imagen4,
+.imagen5,
+.imagen6,
+.imagen7,
+.imagen8,
+.imagen9 {
+    text-align: center;
+}
+
+.imagen1 img,
+.imagen2 img,
+.imagen3 img,
+.imagen4 img, 
+.imagen5 img,
+.imagen6 img,
+.imagen7 img,
+.imagen8 img,
+.imagen9 img {
+    width: 600px; /* Ajusta el valor al tamaño deseado */
+    height: 450px; /* Ajusta el valor al tamaño deseado */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.imagen1 p,
+.imagen2 p,
+.imagen3 p,
+.imagen4 p,
+.imagen5 p,
+.imagen6 p, 
+.imagen7 p,
+.imagen8 p,
+.imagen9 p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+                     /*ESTILO DE SECCION DE MAPA*/
+/*----------------------------------------------------------------------------------------------------*/
+.ubicacion-mapa {
+    height: 100vh; /* 100% de la altura de la ventana gráfica */
+    text-align: center; /* Centra horizontalmente el contenido */
+    overflow: hidden; /* Evita la barra de desplazamiento vertical */
+}
+
+.mapa {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    height: 100%; /* Ajusta el alto al 100% del contenedor */
+}
+
+
+/* Estilos para el pie de página */
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .boton-derecha {
+    position: fixed; /* Permanece en una posición fija en la ventana */
+    bottom: 20px; /* Ajusta la distancia desde abajo */
+    right: 20px; /* Ajusta la distancia desde la derecha */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    background-color: #3498db; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Quita el borde del botón */
+    border-radius: 5px; /* Agrega esquinas redondeadas */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  }
+  
+
+
